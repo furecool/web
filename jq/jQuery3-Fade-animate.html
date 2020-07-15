@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+      <title>jQuery</title>
+      <meta charset="utf-8">
+      <script type="text/javascript" src="jquery.min.js"></script>
+      <style type="text/css">
+
+      #circle {
+
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #A7568B;
+
+      }
+
+      </style>
+  </head>
+  <body>
+
+    <div id="circle"></div>
+
+    <button id="b1">消 退</button>
+    <button id="b2">顯 示</button>
+
+    <script type="text/javascript">
+
+      $("#b1").click(function(){
+
+        // $("#circle").fadeOut();
+        //
+        // $("#circle").fadeOut("slow");
+        //
+        // $("#circle").fadeOut("fast");
+
+        $("#circle").fadeOut(3000, function() {
+
+          alert("消退動畫完成!");
+
+        });
+
+      });
+
+
+      $("#b2").click(function(){
+
+        $("#circle").fadeIn();
+
+      });
+
+
+      $("#circle").click(function(){
+
+        $(this).animate({
+
+          width: "400px",
+          height: "500px",
+          marginLeft: "300px"
+
+        }, 1500);
+
+      });
+
+
+
+
+    </script>
+
+
+  </body>
+</html>

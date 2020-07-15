@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+  <head>
+      <title>javascript</title>
+
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <style media="screen">
+
+
+
+      </style>
+
+  </head>
+
+  <body>
+
+    <!-- <button onclick="alert('您好!')">點按我!</button> -->
+
+    <button id="myButton">點按我!</button>
+
+    <p id="text">原來的一小段文字</p>
+
+    <br><br>
+
+    <button id="myButton1">點按我!</button>
+
+    <p id="text1">我想添加: </p>
+
+    <br><br>
+
+    <button id="myButton2">點按我!</button>
+
+    <p id="text2"></p>
+
+
+
+    <script type="text/javascript">
+
+
+
+      // alert(document.getElementById('text').innerHTML);
+
+      // document.getElementById('text').innerHTML = "修改後的文字";
+
+      document.getElementById("myButton").onclick = function() {
+
+        document.getElementById("text").innerHTML = "新的一小段文字";
+
+      }
+
+      document.getElementById("myButton1").onclick = function() {
+
+        document.getElementById("text1").innerHTML = document.getElementById('text1').innerHTML + "我想添加的文字";
+
+      }
+
+      document.getElementById("myButton2").onclick = function() {
+
+        document.getElementById("text2").innerHTML = "<ul><li>香蕉</li><li>芭樂</li><li>蓮霧</li></ul>";
+
+      }
+
+    </script>
+
+
+  </body>
+</html>

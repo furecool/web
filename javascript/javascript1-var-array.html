@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+  <head>
+      <title>javascript</title>
+
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <style media="screen">
+
+      /* #circle {
+
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background-color: red;
+
+      } */
+
+      </style>
+
+  </head>
+
+  <body>
+
+    <!-- <div id="circle"></div> -->
+
+
+    <input id="myInput" type="text" value="要輸出的文字."/>
+
+    <button id="myButton">點按我!</button>
+
+    <p id="text">原來的一段文字</p>
+
+
+
+    <script type="text/javascript">
+
+    // document.getElementById('circle').onclick = function() {
+    //
+    //   document.getElementById('circle').style.display = "none";
+    //
+    // }
+
+    // var myVariable = document.getElementById('myInput').value;
+    var myArray = ["pizza","chocolate"];
+
+    myArray.push("apple");
+    console.log(myArray);
+
+    // myArray.splice(1,1);
+    myArray.splice(1,0,"orange");
+    console.log(myArray);
+
+
+    document.getElementById('myButton').onclick = function() {
+
+    var  myVariable = document.getElementById('myInput').value;
+
+      document.getElementById("text").innerHTML = myVariable;
+      // document.getElementById("text").innerHTML = myArray[0];
+
+    }
+
+    </script>
+
+
+  </body>
+</html>

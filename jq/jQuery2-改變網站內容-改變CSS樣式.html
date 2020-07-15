@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+      <title>jQuery</title>
+      <meta charset="utf-8">
+      <script type="text/javascript" src="jquery.min.js"></script>
+      <style type="text/css">
+
+      #circle {
+
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #A7568B;
+
+      }
+
+      .square {
+
+        width: 200px;
+        height: 200px;
+        background-color: #E86D5E;
+        margin-top: 10px;
+
+      }
+
+      </style>
+  </head>
+  <body>
+
+    <div id="circle"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <p>這是一段文字.</p>
+
+    <iframe src="https://www.books.com.tw/" width="800" height="600"></iframe>
+
+    <script type="text/javascript">
+
+    $("#circle").click(function(){
+
+      // $("p").html("這段文字已被修改.");
+
+      // alert($("p").html());
+
+      // alert($("iframe").attr("src"));
+
+      // $("#circle").css("width","400px");
+
+      // $(".square").css("display", "none");
+
+      // $(".square").hide();
+
+      $(".square").fadeOut();
+
+    });
+
+      // -----------------------------------------
+
+      // $("div").click(function(){
+      //
+      //   $(this).css("width", "600px");
+      //
+      // });
+
+    </script>
+
+
+  </body>
+</html>

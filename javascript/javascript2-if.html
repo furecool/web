@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+  <head>
+      <title>javascript</title>
+
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <style media="screen">
+
+
+      </style>
+
+  </head>
+
+  <body>
+
+    <p >今天天氣怎麼樣?</p>
+
+    <input id="myInput" type="text" value="要輸出的文字."/>
+
+    <button id="myButton">提 交</button>
+
+
+    <script type="text/javascript">
+
+        document.getElementById('myButton').onclick = function() {
+
+          if (document.getElementById('myInput').value == "下雨") {
+
+            alert("今天下雨!");
+
+          } else {
+
+            alert("今天沒下雨!");
+
+          }
+
+        }
+
+    </script>
+
+
+  </body>
+</html>

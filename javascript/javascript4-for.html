@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" >
+  <head>
+      <title>javascript</title>
+
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <style media="screen">
+
+
+      </style>
+
+  </head>
+
+  <body>
+
+    <p id="arrayString"></p>
+
+    <script type="text/javascript">
+
+      var arrayString = "";
+
+      var myArray = ["pizza", "chocolate", "ice cream"];
+
+      for (var i = 0; i < myArray.length; i++) {
+
+        arrayString = arrayString + myArray[i]　+ " ";
+
+      }
+
+      document.getElementById('arrayString').innerHTML = arrayString;
+
+
+
+
+    </script>
+
+
+  </body>
+</html>
